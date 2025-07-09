@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "estrutura-de-projeto-de-dados"
+version = "0.1.0"
+description = "Estrutura de projetos de dados."
+authors = ["Fefe Alves <monitore.falves@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11.3"
+pandas = "^2.3.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
