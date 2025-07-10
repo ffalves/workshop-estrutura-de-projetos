@@ -1,5 +1,5 @@
 import pandas as pd
-from app.pipeline.transform import concat_data_frames
+from app.pipeline.transform import concat_data_frame
 
 
 
@@ -15,7 +15,7 @@ def testar_a_concatenacao_da_lista_de_dataframe():
     data_frame_list = [df1, df2]
 
     # act
-    df = concat_data_frames(data_frame_list)
+    df = concat_data_frame(data_frame_list)
 
     # assert
     assert df.shape == (4, 2)
