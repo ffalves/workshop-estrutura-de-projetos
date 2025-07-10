@@ -10,8 +10,6 @@ from typing import List
     return: lista de dataframes
 """
 
-path = "data/input"
-
 def extract_from_excel(path: str) -> List[pd.DataFrame]:
     all_files = glob.glob(os.path.join(path, "*.xlsx"))
 
@@ -22,6 +20,6 @@ def extract_from_excel(path: str) -> List[pd.DataFrame]:
     return data_frame_list
 
 if __name__ == "__main__":
-    data_frame_list = extract_from_excel(path)
+    data_frame_list = extract_from_excel(path = "data/input")
     print(data_frame_list)
 
