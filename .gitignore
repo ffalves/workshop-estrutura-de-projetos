@@ -1,7 +1,9 @@
 .venv
 .vscode
 poetry.lock
-
+site_packages_list.py
+.DS_Store
+Ebook-Workshop-Como-Estruturar-um-projeto-de-Dados-do-Zero.pdf
 
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
