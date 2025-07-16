@@ -1,0 +1,94 @@
+# Informações do Projeto
+site_name: Estrutura de Projeto de Dados
+site_description: Documentação técnica e API de um projeto de dados com boas práticas.
+site_author: Fefe Alves
+site_url: https://ffalves.github.io/workshop-estrutura-de-projetos/ # Substitua pelo URL real
+
+# Repositório
+repo_name: ffalves/workshop-estrutura-de-projetos
+repo_url: https://github.com/ffalves/workshop-estrutura-de-projetos
+edit_uri: blob/main/docs/ # Caminho para a pasta de docs para o link "Edit this page"
+
+# Copyright
+copyright: Copyright &copy; 2024 Fefe Alves
+
+# Configuração
+theme:
+  name: material
+  language: pt
+  palette:
+    # Paleta para modo claro
+    - scheme: default
+      primary: green
+      accent: lime
+      toggle:
+        icon: material/brightness-7
+        name: Mudar para modo escuro
+
+    # Paleta para modo escuro
+    - scheme: slate
+      primary: green
+      accent: lime
+      toggle:
+        icon: material/brightness-4
+        name: Mudar para modo claro
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - toc.integrate
+
+# Extensões
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+
+# Plugins
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["app"] # Garanta que este é o caminho correto para seu código fonte
+          options:
+            docstring_style: google
+            show_source: true
+            separate_signature: true
+            merge_init_into_class: true
+            show_root_heading: true
+
+# Estrutura de Navegação (árvore de páginas)
+nav:
+  - Início: index.md
+  - Documentação:
+      - Extração: pipeline/extract.md
+      - Transformação: pipeline/transform.md
+      - Carregamento: pipeline/load.md
+      - Testes de Pipeline: tests/test_pipeline.md
