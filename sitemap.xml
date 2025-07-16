@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://ffalves.github.io/workshop-estrutura-de-projetos/</loc>
+         <lastmod>2025-07-16</lastmod>
+    </url>
+    <url>
+         <loc>https://ffalves.github.io/workshop-estrutura-de-projetos/pipeline/extract/</loc>
+         <lastmod>2025-07-16</lastmod>
+    </url>
+    <url>
+         <loc>https://ffalves.github.io/workshop-estrutura-de-projetos/pipeline/load/</loc>
+         <lastmod>2025-07-16</lastmod>
+    </url>
+    <url>
+         <loc>https://ffalves.github.io/workshop-estrutura-de-projetos/pipeline/transform/</loc>
+         <lastmod>2025-07-16</lastmod>
+    </url>
+    <url>
+         <loc>https://ffalves.github.io/workshop-estrutura-de-projetos/tests/test_pipeline/</loc>
+         <lastmod>2025-07-16</lastmod>
+    </url>
+</urlset>
