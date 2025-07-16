@@ -5,12 +5,12 @@ site_author: Fefe Alves
 site_url: https://ffalves.github.io/workshop-estrutura-de-projetos/ # Substitua pelo URL real
 
 # Repositório
-repo_name: ffalves/workshop-estrutura-de-projetos
-repo_url: https://github.com/ffalves/workshop-estrutura-de-projetos
+repo_name: "Workshop Estrutura de Projetos"
+repo_url: "https://github.com/ffalves/workshop-estrutura-de-projetos"
 edit_uri: blob/main/docs/ # Caminho para a pasta de docs para o link "Edit this page"
 
 # Copyright
-copyright: Copyright &copy; 2024 Fefe Alves
+copyright: MIT
 
 # Configuração
 theme:
@@ -55,7 +55,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          format: pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.inlinehilite
@@ -64,8 +64,8 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: "material.extensions.emoji.twemoji"
+      emoji_generator: "material.extensions.emoji.to_svg"
   - pymdownx.snippets
   - attr_list
   - md_in_html
